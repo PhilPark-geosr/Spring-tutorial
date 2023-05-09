@@ -1,6 +1,14 @@
 package ppark.pparkproject.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Member {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // pk를 자동으로 생성하는 전략 사용
     private Long id;
     private String name;
 

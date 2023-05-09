@@ -2,6 +2,7 @@ package ppark.pparkproject.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ppark.pparkproject.domain.Member;
 import ppark.pparkproject.repository.MemberRepository;
 import ppark.pparkproject.repository.MemoryMemberRepository;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional
 public class MemberService {
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
 
